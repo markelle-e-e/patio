@@ -1,0 +1,86 @@
+<!--INDEX.HTML-->
+<header>
+	<h1>
+    Jesse Tortorella
+  </h1>
+  <p>
+    Photographer and Musician
+  </p>
+</header>
+
+<section class="image_1"></section>
+<section class="image_2"></section>
+<section class="image_3"></section>
+<section class="image_4"></section>
+<section class="image_5"></section>
+
+<footer>
+	<a href="mailto:contact@tortorellaphotography.com">Email</a>
+	<a href="https://twitter.com/isurvivedligma">Twitter</a>
+  <a href="https://instagram.com/portabellatortorella">Instagram</a>
+</footer>
+
+/*CSS FILE*/
+body {
+  font-family: 'EB Garamond';
+  font-size: 25px;
+  background-color: #004d96;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  /*vh is viewport height -- responseive! */
+  background-image: url('pic_0649.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.image_2 {
+  background-image: url('i-m-hot.jpeg');
+}
+
+.image_3 {
+  background-image: url('pic_0540.jpg');
+}
+
+.image_4 {
+  background-image: url('pic_0770.jpg');
+}
+
+.image_5 {
+  background-image: url('pic_0570.jpg');
+}
+
+header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+footer a {
+  margin-right: 5px;
+}
+
+a:hover {
+  color: rgba(2, 84, 7, 1);
+  font-style: italic;
+}
