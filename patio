@@ -1,0 +1,164 @@
+<!--INDEX.HTML FILE-->
+
+<header>
+	<h1>
+  	<img src="logo.svg"  
+  </h1>
+</header>
+  
+<nav>
+  <a href="street-food.html">Street Food</a>
+  <a href="the-space.html">The Space</a>
+  <a href="cafe.html">Cafe</a>
+  <a href="blog.html">Blog</a>
+</nav>
+  
+<section>
+  <h2>
+    A rotational pop-up restaurant and café serving up the freshest, tastiest street food from different chefs every two weeks.
+  </h2> 
+</section>
+  
+<section class="image">
+	<img src="store.jpg">
+</section>
+  
+<section>
+  <p>
+    Amongst the office blocks between stylish Shoreditch and the bustle of the city find our lush spot of paradise perched at the edge of Finsbury Square’s popular bowls green. It’s the end of our official first day of trading and while it’s still a week away until we have our first street food chefs in occupation, we’ve had a ball of a day serving up coffees, ice creams and soft drinks to our new (and hopefully returning) customers. </p>
+  
+<blockquote>
+“I’d like to be a part of something with a bit of soul. I really want to know about the people I’m serving, what makes them tick.”
+</blockquote>
+  
+<p>We’ll be open this week Monday to Friday from 8am to 6pm so pop in to say hello and to enjoy an expert barista coffee or real fruit ice lolly on Finsbury Square’s Patio.</p>
+</section>
+  
+<section class="image">
+	<img src="coffee.jpg">
+</section>
+
+<section class="contact">
+	<img src="map.svg" class="map">
+  
+  <p>
+    We are five minutes walk from Old St and Moorgate stations and a ten minute walk away from Shoreditch High Street and Liverpool Street stations.
+  </p>
+  
+  <p>
+    Call us on <a href="tel">+44 07549 520 689</a>
+  </p>
+</section>
+
+
+
+/*STYLE.CSS FILE*/
+
+body {
+  font-family: "Lora";
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+  
+  background-image: url("background.svg");
+  /*width: 640px; not responsive, it's fixed */
+  max-width: 640px;
+  /*this is responsive */ 
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding: 40px;
+}
+
+header {
+  background-color: white;
+  padding: 40px;
+}
+
+nav {
+  background-color:#f05d5d;
+  padding: 20px 40px 20px 40px;
+}
+
+nav a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  color: #5000ff;
+  border-bottom: solid 2px #ffffff;
+}
+
+section {
+  background-color: #5000ff;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.image {
+  padding: 0;
+  
+}
+
+blockquote {
+  font-size: 32px;
+  font-style: italic;
+  line-height: 1.2;
+  /*padding: 40px 0px 40px 0px;
+when creating space between elements use margins! when creating space inside an element, use padding! */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.map {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.contact p {
+  margin-top: 20px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+  /*changing the underline of a link in css*/
+  border-bottom: solid 2px #f05d5d;
+}
+
+@media (max-width: 520px) /*maximum viewport size this should apply to*/ {
+  section, 
+  header {
+    padding: 20px;
+  }
+  nav {
+    padding-top: 10px 20px 10px 20px;
+  }
+  
+  nav a {
+    display: block;
+  }
+  
+  nav a:hover {
+    border: none;
+  }
+  
+  h2, 
+  blockquote {
+    font-size: 24px;
+  }
+  body {
+    font-size: 16px;
+    padding-top: 0;
+    
+  }
+  
+}
+
